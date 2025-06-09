@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Area</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="heading">QUIZ AREA</h1>
+
+  <div class="button-container">
+    <button class="button-3d" onclick="showCreateForm()">CREATE QUIZ</button>
+    <button class="button-3d" onclick="startAttempt()" id="attemptBtn" disabled>ATTEMPT QUIZ</button>
+  </div>
+
+  <div id="createForm" class="hidden">
+    <input type="text" id="creatorName" placeholder="Enter Your Name"><br>
+    <input type="text" id="quizSubject" placeholder="Enter Quiz Subject"><br>
+    <input type="number" id="questionCount" placeholder="Number of Questions"><br>
+    <button class="button-3d" onclick="generateQuestionFields()">Generate Questions</button>
+  </div>
+
+  <form id="questionForm" class="hidden"></form>
+
+  <div id="quizArea" class="hidden"></div>
+  <div id="result" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
